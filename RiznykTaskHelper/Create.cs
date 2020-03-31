@@ -23,7 +23,7 @@ namespace RiznykTaskHelper
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)// Creating of task or reminding
         {
             if (tabControl1.SelectedIndex == 0)
             {
@@ -42,7 +42,7 @@ namespace RiznykTaskHelper
                 {
                     Reminding newReminding = new Reminding() { Name = textBox2.Text, Description = richTextBox2.Text, Date = dateTimePicker1.Value, Done = false };
                     Serialisation.Serialise<Reminding>(newReminding, Application.StartupPath + @"\remindings.json");
-                    MessageBox.Show("Reminding created!");
+                    MessageBox.Show("Reminding created! Press 'Refresh' button.");
                 }
             }
         }

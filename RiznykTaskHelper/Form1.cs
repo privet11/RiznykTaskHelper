@@ -18,7 +18,7 @@ namespace RiznykTaskHelper
         {
             InitializeComponent();
             DataGrindLoad();
-            for (int i = 0; i < remindingsList.Count; i++)
+            for (int i = 0; i < remindingsList.Count; i++)//Not marked remindings will be showed after start the application
             {
                 if (remindingsList[i].Date.ToString("MM/dd/yyyy") == DateTime.Today.ToString("MM/dd/yyyy")&& remindingsList[i].Done!=true)
                 {
@@ -26,7 +26,7 @@ namespace RiznykTaskHelper
                 }
             }
         }
-        public void DataGrindLoad()
+        public void DataGrindLoad()//Loading tasks and remindings into datagrinds
         {
             tasksList = Serialisation.GetList<Task>(Application.StartupPath + @"\tasks.json");
             remindingsList = Serialisation.GetList<Reminding>(Application.StartupPath + @"\remindings.json");
@@ -41,7 +41,7 @@ namespace RiznykTaskHelper
         }
 
 
-        private void button1_Click(object sender, EventArgs e) //create
+        private void button1_Click(object sender, EventArgs e) //Create button
         {
             Create f1 = new Create();
             f1.Show();
@@ -65,7 +65,7 @@ namespace RiznykTaskHelper
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)//Deleting button
         {
             if (tabControl1.SelectedIndex == 0)
             {
@@ -78,7 +78,7 @@ namespace RiznykTaskHelper
                         tasksList.RemoveAt(selectedRowIndex);
                         Serialisation.Serialise<Task>(tasksList, Application.StartupPath + @"\tasks.json");
                         dataGridView1.Rows.RemoveAt(selectedRowIndex);
-                        MessageBox.Show("Task deleted!");
+                        MessageBox.Show("Task deleted! Press 'Refresh' button.");
                     }
                 }
             }
@@ -93,13 +93,13 @@ namespace RiznykTaskHelper
                         remindingsList.RemoveAt(selectedRowIndex);
                         Serialisation.Serialise<Reminding>(remindingsList, Application.StartupPath + @"\remindings.json");
                         dataGridView2.Rows.RemoveAt(selectedRowIndex);
-                        MessageBox.Show("Reminding deleted!");
+                        MessageBox.Show("Reminding deleted! Press 'Refresh' button.");
                     }
                 }
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)//Update button
         {
             if (tabControl1.SelectedIndex == 0)
             {
@@ -136,7 +136,7 @@ namespace RiznykTaskHelper
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)//Refresh button
         {
             dataGridView1.Rows.Clear();
             dataGridView2.Rows.Clear();
