@@ -1,0 +1,10 @@
+C:\Users\Andriy\source\repos\RiznykTaskHelper\RiznykTaskHelper\bin\Debug\RiznykTaskHelper.exe.config
+C:\Users\Andriy\source\repos\RiznykTaskHelper\RiznykTaskHelper\bin\Debug\RiznykTaskHelper.exe
+C:\Users\Andriy\source\repos\RiznykTaskHelper\RiznykTaskHelper\bin\Debug\RiznykTaskHelper.pdb
+C:\Users\Andriy\source\repos\RiznykTaskHelper\RiznykTaskHelper\obj\Debug\RiznykTaskHelper.csprojAssemblyReference.cache
+C:\Users\Andriy\source\repos\RiznykTaskHelper\RiznykTaskHelper\obj\Debug\RiznykTaskHelper.Create.resources
+C:\Users\Andriy\source\repos\RiznykTaskHelper\RiznykTaskHelper\obj\Debug\RiznykTaskHelper.Form1.resources
+C:\Users\Andriy\source\repos\RiznykTaskHelper\RiznykTaskHelper\obj\Debug\RiznykTaskHelper.Properties.Resources.resources
+C:\Users\Andriy\source\repos\RiznykTaskHelper\RiznykTaskHelper\obj\Debug\RiznykTaskHelper.csproj.GenerateResource.cache
+C:\Users\Andriy\source\repos\RiznykTaskHelper\RiznykTaskHelper\obj\Debug\RiznykTaskHelper.exe
+C:\Users\Andriy\source\repos\RiznykTaskHelper\RiznykTaskHelper\obj\Debug\RiznykTaskHelper.pdb
